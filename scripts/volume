@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ $1 == "dec" ]]; then pactl -- set-sink-volume 0 -$2%; echo "Decreased volume by %2%";
+elif [[ $1 == "inc" ]]; then pactl -- set-sink-volume 0 +$2%; echo "Increased volume by %2%";
+elif [[ $1 == "set" ]]; then pactl -- set-sink-volume 0 $2%; echo "Set volume to $2%";
+elif [[ $1 == "mute" ]]; then pactl set-sink-mute 0 toggle; echo "Toggled volume."; fi
+
+# My first script, works really well with dmenu!
+# Examples on how to use: 
+# Set volume: $ volume set 69
+# Increase volume: $ volume inc 69
+# Decrease volume: $ volume dec 69
+# Toggle mute: $ volume mute
