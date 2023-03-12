@@ -1,0 +1,3 @@
+#!/bin/sh
+# As the name of this script suggests, it returns audio only if you're using pulseaudio with pulsemixer!
+pulsemixer --get-mute | grep 0 > /dev/null && echo "<span foreground='#81A1C1' size='large'></span> <span  rise='2pt'>$(pulsemixer --get-volume | awk '{print $1}')%</span>" || echo "<span foreground='#bf616a' size='large'>ﱝ</span>"
