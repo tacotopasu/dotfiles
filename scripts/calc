@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ $2 == "+" ]]; then printf "Result: $(($1+$3))\n";
+elif [[ $2 == "-" ]]; then printf "Result: $(($1-$3))\n";
+elif [[ $2 == "*" ]]; then printf "Result: $(($1*$3))\n";
+elif [[ $2 == "/" ]]; then  printf "Result: $(($1/$3))\n"; fi
+
+# Example commands:
+# Summing: $ calc 1 + 1
+# Subtracting: $ calc 1 - 1
+# Multiplying: $ calc 1 * 1
+# Dividing: $ calc 1 / 1
