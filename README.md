@@ -10,7 +10,7 @@ My setup consists of a clean install of Arch Linux with a few packages:
 * mpd + ncmpcpp - To listen to music
 * And more...
 
-The main purpose of this repository is to keep my settings when installing arch on my other systems, but feel free to suggest changes, fork and all of that jazz. No license, go crazy, use this as you will.
+The main purpose of this repository is to keep my settings when installing arch on my other systems, but feel free to suggest changes, fork and all of that jazz. No license, go crazy, use this as you will, as long as you credit me properly :3
 
 The desktop looks like this:
 
