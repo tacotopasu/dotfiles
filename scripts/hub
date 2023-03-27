@@ -1,0 +1,32 @@
+#!/bin/bash
+
+case $1 in
+
+	ip)
+		curl ifconfig.co
+	;;
+	bin)
+		echo $2 | curl -F 'clbin=<-' https://clbin.com
+	;;
+	upload)
+		curl https://oshi.at -F f=@$2
+	;;
+	qrcode)
+		echo $2 | curl -F-=\<- qrenco.de
+	;;
+	hnews)
+		curl hkkr.in
+	;;
+	weather)
+		curl wttr.in/$2
+	;;
+	help)
+	echo "* ip - Get your IP! | ex: hub ip"
+        echo "* bin - Make a handy pastebin to share text! | ex: hub bin 'Hello World!'"
+        echo "* upload - Upload a file (up to 5gb)! | ex: hub upload file.txt"
+        echo "* qrcode - Make a QRCode of any text! | ex: hub qrcode 'Hello World!'"
+        echo "* hnews - Get a short feed of the latest hacker news! | ex: hub hnews"
+        echo "* weather - Get the Weather! | ex: 'hub weather', 'hub weather London'"
+        echo "* help - Print this help menu! | ex: hub help"
+	
+esac
