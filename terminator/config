@@ -1,16 +1,21 @@
 [global_config]
+  borderless = True
+  extra_styling = False
+  inactive_color_offset = 1.0
 [keybindings]
 [profiles]
   [[default]]
     background_color = "#3d3846"
-    background_darkness = 1.0
+    background_darkness = 0.85
     background_type = transparent
-    cursor_shape = underline
     cursor_fg_color = "#ffffff"
     cursor_bg_color = "#aaaaaa"
     cursor_color_default = False
+    font = Iosevka Medium 10
     foreground_color = "#ffffff"
     show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
     title_hide_sizetext = True
 [layouts]
   [[default]]
